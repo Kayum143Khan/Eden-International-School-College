@@ -1,0 +1,169 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: #002244;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Top Bar with Slogan Combined */
+.top-bar {
+   background: linear-gradient(#005ce6, #005ce6);
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+}
+.top-bar .slogan {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* Address */
+.Address {
+  background-color: #005ce6;
+  color: #ffffff;
+  text-align: center;
+  padding: 6px 12px;
+  font-size: 40px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #005ce6;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #0040ff;
+}
+
+/* ✅ Teacher Grid */
+.teacher-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.teacher-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.teacher-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.teacher-card h4 {
+  color: #003366;
+  margin-bottom: 6px;
+}
+
+/* ✅ Form Styling */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .faculty-heading {
+    font-size: 26px;
+  }
+
+  .faculty-member h3 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .top-bar .slogan {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  .Address {
+    font-size: 26px;
+  }
+}
+footer {
+  background-color: #003366; /* ইচ্ছামতো ব্যাকগ্রাউন্ড রঙ */
+  color: white;
+  text-align: center; /* লেখাকে মাঝখানে আনা */
+  padding: 15px 10px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+}

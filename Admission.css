@@ -1,0 +1,188 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: #002244;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Top Bar with Slogan Combined */
+
+.top-bar {
+   background: linear-gradient(#005ce6, #005ce6);
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+}
+
+
+.top-bar .slogan {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* Address */
+.Address {
+  background-color: #005ce6;
+  color: #ffffff;
+  text-align: center;
+  padding: 6px 12px;
+  font-size: 40px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #005ce6;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #0040ff;
+}
+
+/* 🧑‍🏫 Faculty Section Styling */
+.faculty-section {
+  background-color: #f4f8ff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.faculty-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faculty-heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #003366;
+  border-bottom: 2px solid #3366ff;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.faculty-member {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-left: 5px solid #3366ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.faculty-member:hover {
+  transform: translateY(-5px);
+}
+
+.faculty-member h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #003366;
+}
+
+.faculty-member .designation {
+  font-weight: bold;
+  color: #3366ff;
+  margin: 8px 0 5px;
+}
+
+.faculty-member p {
+  margin: 4px 0;
+  color: #333333;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .faculty-member {
+    padding: 20px;
+  }
+
+  .faculty-heading {
+    font-size: 26px;
+  }
+
+  .faculty-member h3 {
+    font-size: 20px;
+  }
+}
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #00509e;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f1f1f1;
+    }
+    #searchBox {
+      margin: 20px 0;
+      padding: 10px;
+      width: 100%;
+      max-width: 400px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+footer {
+  background-color: #003366; /* ইচ্ছামতো ব্যাকগ্রাউন্ড রঙ */
+  color: white;
+  text-align: center; /* লেখাকে মাঝখানে আনা */
+  padding: 15px 10px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+}

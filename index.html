@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eden International School & College</title>
+  <meta name="description" content="Eden International School & College is committed to academic excellence and holistic development in Dhaka, Bangladesh.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+ 
+
+<!-- 🟦 উপরের বার -->
+  <div class="top-bar">
+    <div class="top-left">
+      📞 01711273586 &nbsp; ✉️ iscmbd@gmail.com
+    </div>
+    <div class="top-center">
+      “শিক্ষা নিয়ে গড়ব দেশ, লাল সবুজের বাংলাদেশ”
+    </div>
+    <div class="top-right">
+      <a href="#" class="app-btn">Apps Download</a>
+    </div>
+  </div>
+
+  <!-- 🏫 স্কুল নাম ও লোগো -->
+  <div class="header-main">
+    <img src="school.jpg" alt="School Logo" class="school-logo"> <!-- তুমি এখানে লোগোর path দাও -->
+    <div class="school-info">
+      <h1>Eden International School & College, Khilgaon, Dhaka</h1>
+      <p>ইডেন ইন্টারন্যাশনাল স্কুল অ্যান্ড কলেজ, খিলগাঁও, ঢাকা</p>
+    </div>
+  </div>
+
+    <!-- 🧭 মেনু বার -->
+  <nav class="main-menu">
+    <ul>
+      <li><a href="Eden International School & College.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Faculty.html">Faculty</a></li>
+      <li><a href="Admission.html">Admission</a></li>
+      <li><a href="Academics.html">Academics</a></li>
+      <li><a href="Result.html">Result</a></li>
+      <li><a href="Gallery.html">Gallary</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔥 আপনার কনটেন্ট এখানে শুরু হবে -->
+<!--flowing letter alphabet-->
+<div class="marquee-container">
+    <div class="marquee">
+      <a href="https://example.com/link1" target="_blank">প্রথম লাইন</a>
+      <span>::</span>
+      <a href="https://example.com/link2" target="_blank">দ্বিতীয় লাইন</a>
+      <span>::</span>
+      <a href="https://example.com/link3" target="_blank">তৃতীয় লাইন</a>
+      <span>::</span>
+      <!-- রিপিট করতে হলে লাইনগুলো আবার দিতে পারেন -->
+      <a href="https://example.com/link1" target="_blank">প্রথম লাইন</a>
+      <span>::</span>
+      <a href="https://example.com/link2" target="_blank">দ্বিতীয় লাইন</a>
+      <span>::</span>
+      <a href="https://example.com/link3" target="_blank">তৃতীয় লাইন</a>
+      <a href="https://example.com/link1" target="_blank">প্রথম লাইন</a>
+      <span>::</span>
+      <a href="https://example.com/link2" target="_blank">দ্বিতীয় লাইন</a>
+      <span>::</span>
+      <a href="https://example.com/link3" target="_blank">তৃতীয় লাইন</a>
+      <a href="https://example.com/link1" target="_blank">প্রথম লাইন</a>
+      <span>::</span>
+      <a href="https://example.com/link2" target="_blank">দ্বিতীয় লাইন</a>
+      <span>::</span>
+      <a href="https://example.com/link3" target="_blank">তৃতীয় লাইন</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!--ছবি দেখাবে ২টি করে Navigation Menu -->
+<div class="slideshow-box">
+  <div class="slideshow-track">
+    <div class="slide">
+      <img src="photo1.jpg" alt="Slide 1">
+      <img src="photo2.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="photo3.jpg" alt="Slide 3">
+      <img src="photo4.jpg" alt="Slide 4">
+    </div>
+    <div class="slide">
+      <img src="photo5.jpg" alt="Slide 3">
+      <img src="photo6.jpg" alt="Slide 4">
+    </div>
+    <!-- More slides as needed -->
+  </div>
+  
+  <!-- ← ও → নেভিগেশন বোতাম -->
+  <div class="arrow arrow-left" onclick="prevSlide()">&#10094;</div>
+  <div class="arrow arrow-right" onclick="nextSlide()">&#10095;</div>
+</div>
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = (i === index) ? '1' : '0';
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+  // অটো শুরুতে প্রথম স্লাইড দেখানো
+  showSlide(currentSlide);
+</script>
+
+
+
+
+
+
+
+
+<section class="home-sections">
+  <!-- সভাপতি -->
+  <div class="card">
+    <h3 class="card-title">সভাপতি</h3>
+    <img src="photo4.jpg" alt="সভাপতি" class="profile-img">
+    <h4>জনাব এস এম ওবায়দুল ইসলাম</h4>
+    <p>সাবেক সচিব, স্বরাষ্ট্র মন্ত্রণালয়<br>সভাপতি, আইডিয়াল স্কুল অ্যান্ড কলেজ</p>
+    <a href="#" class="read-more">Read more</a>
+  </div>
+
+  <!-- অধ্যক্ষ -->
+  <div class="card">
+    <h3 class="card-title">প্রধান শিক্ষক</h3>
+    <img src="Principle.jpg" alt="অধ্যক্ষ" class="profile-img">
+    <h4>মোঃ জামাল মল্লিক</h4>
+    <p>প্রধান শিক্ষক<br>ইডেন ইন্টারন্যাশনাল স্কুল অ্যান্ড কলেজ</p>
+    <a href="#" class="read-more">Read more</a>
+  </div>
+
+ <!-- নোটিশ বোর্ড -->
+<div class="card notice-board">
+  <h3 class="card-title">নোটিশ বোর্ড</h3>
+  
+  <div class="notice-filter">
+    <label for="notice-category">ক্যাটাগরি:</label>
+    <select id="notice-category" onchange="filterNotices()">
+      <option value="all">সব</option>
+      <option value="english">English Version</option>
+      <option value="bangla">Bangla Version</option>
+    </select>
+  </div>
+
+  <div id="notice-list">
+    <div class="notice-item" data-category="english">
+      <div class="notice-date"><span>17th</span><br><small>Dec</small></div>
+      <div class="notice-content">
+        <button class="notice-button">Admission session 2018 Eden International School & College File-1</button>
+        <p>📅 2023-12-17 16:38:21</p>
+      </div>
+    </div>
+
+    <div class="notice-item" data-category="bangla">
+      <div class="notice-date"><span>17th</span><br><small>Dec</small></div>
+      <div class="notice-content">
+        <button class="notice-button">Admission session 2018 Eden International School & College File-2</button>
+        <p>📅 2024-12-17 16:20:39</p>
+      </div>
+    </div>
+
+    <div class="notice-item" data-category="bangla">
+      <div class="notice-date"><span>17th</span><br><small>Dec</small></div>
+      <div class="notice-content">
+        <button class="notice-button">Admission session 2018 Eden International School & College File-3</button>
+        <p>📅 2025-12-17 16:20:19</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- সব নোটিশ দেখুন বোতাম -->
+  <a href="#" class="read-more">সব নোটিশ দেখুন</a>
+</div>
+<script>
+function filterNotices() {
+  const selectedCategory = document.getElementById("notice-category").value;
+  const notices = document.querySelectorAll(".notice-item");
+
+  notices.forEach(function(notice) {
+    const category = notice.getAttribute("data-category");
+
+    if (selectedCategory === "all" || category === selectedCategory) {
+      notice.style.display = "flex";
+    } else {
+      notice.style.display = "none";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+<!--News And Event-->
+<section class="about-news-section">
+  <!-- About School -->
+  <div class="about-school">
+    <h2>About School</h2>
+    <p id="about-text">
+      Eden International School & College is a modern and progressive institution committed to academic excellence.
+      <span id="dots">...</span>
+      <span id="more-text" style="display: none;">
+        We offer education from Playgroup to Grade 12, nurturing students to become responsible and ethical citizens.
+        Our mission is to empower students with knowledge, values, and skills for a better future.
+      </span>
+    </p>
+    <a href="About.html" id="readMoreBtn" class="about-school read-more-button">
+  Read More
+</a>
+  </div>
+
+  <!-- News and Events -->
+<div class="news-events">
+  <h2>News & Events</h2>
+  <div class="news-ticker-container">
+    <div class="news-ticker-track">
+      <div class="news-ticker-items">
+        <!-- মূল লেখাগুলো একবার বসিয়ে নিন -->
+        <span>🔔 Admission is open for 2025 session</span>
+        <span>📝 Annual exams begin next week</span>
+        <span>🏆 1st place in National Science Fair</span>
+        <span>👨‍🏫 Parent-Teacher Meeting – June 10</span>
+        <span>📅 New class routine published</span>
+        <span>🎤 Career Guidance Seminar - June 15</span>
+        <!-- একই লেখাগুলো আবার ডুপ্লিকেট করে বসাতে হবে -->
+        <span>🔔 Admission is open for 2025 session</span>
+        <span>📝 Annual exams begin next week</span>
+        <span>🏆 1st place in National Science Fair</span>
+        <span>👨‍🏫 Parent-Teacher Meeting – June 10</span>
+        <span>📅 New class routine published</span>
+        <span>🎤 Career Guidance Seminar - June 15</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- এখানে অতিরিক্ত লাইনগুলো দেখানো হবে -->
+  <div class="additional-lines">
+    <h3>More Headlines</h3>
+    <p>📰 Newspaper: The Daily Chronicle – Edition published on June 1, 2025</p>
+    <p>🌐 Website Launched: Our new e-learning portal is now live</p>
+    <p>🎓 Workshop: Career Counseling workshop scheduled for June 20</p>
+    <!-- আরো যতগুলো লাইন চান এখানে যোগ করুন -->
+  </div>
+</div>
+
+</section>
+
+
+
+<!--Teacher Name List-->
+<div class="section-heading">
+  <h2>👩‍🏫 Assistant Teachers</h2>
+  <p>Meet our qualified and dedicated assistant teachers</p>
+</div>
+
+<section class="assistant-teacher-section">
+  <div class="teacher-card">
+    <img src="photo1.jpg" alt="Ms. Ayesha Begum">
+    <h3>Ms. Ayesha Begum</h3>
+  </div>
+  <div class="teacher-card">
+    <img src="photo2.jpg" alt="Mr. Salim Reza">
+    <h3>Mr. Salim Reza</h3>
+  </div>
+  <div class="teacher-card">
+    <img src="photo3.jpg" alt="Ms. Farzana Akter">
+    <h3>Ms. Farzana Akter</h3>
+  </div>
+  <div class="teacher-card">
+    <img src="photo4.jpg" alt="Mr. Anisur Rahman">
+    <h3>Mr. Anisur Rahman</h3>
+  <a href="employ.html" class="read-more-link">Read More</a>
+  </div>
+</section>
+
+
+<!--Calendar and Hotline-->
+<div class="wide-container">
+  <!-- 📅 Calendar Section -->
+  <div class="calendar-section">
+    <div class="section-header">Academic Calendar</div>
+    <div id="calendar"></div>
+  </div>
+
+  <!-- 📞 Hotline Section -->
+  <div class="hotline-section">
+    <div class="section-header">Emergency Hotline</div>
+    <ul class="hotline-list">
+      <li><img src="govticon.jpeg" alt="৩৩৩"> সরকারি তথ্য ও সেবা  333</li>
+      <li><img src="emergencyicon.jpeg" alt="৯৯৯"> জরুরি সেবা   999</li>
+      <li><img src="childicon.jpeg" alt="১০৯"> নারী ও শিশু সহায়তা   109</li>
+      <li><img src="corruptionicon.jpeg" alt="১০৬"> দুর্নীতি দমন    106</li>
+      <li><img src="sisester.jpeg" alt="১০৯০"> দুর্যোগ সতর্কবার্তা   1090</li>
+    </ul>
+  </div>
+</div>
+
+<!-- FullCalendar CSS -->
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet" />
+
+<!-- FullCalendar JS -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      }
+    });
+    calendar.render();
+  });
+</script>
+
+
+  <!--Here is why EISC Best-->
+<section class="why-best-section">
+  <h2 class="why-best-title">Why "EISC IS BEST"</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <img src="laboratory.png" alt="Modern Science Laboratory">
+      <h3>Modern Science Laboratory</h3>
+    </div>
+    <div class="feature-card">
+      <img src="teachericon.jpg" alt="Experienced Teacher">
+      <h3>Experienced Teacher</h3>
+    </div>
+    <div class="feature-card">
+      <img src="library.jpg" alt="Rich Library">
+      <h3>Rich Library</h3>
+    </div>
+    <div class="feature-card">
+      <img src="classroomicon.jpg" alt="Smart Classroom">
+      <h3>Smart Classroom</h3>
+    </div>
+    <div class="feature-card">
+      <img src="laboratory.png" alt="Modern Science Laboratory">
+      <h3>Modern Science Laboratory</h3>
+    </div>
+    <div class="feature-card">
+      <img src="teachericon.jpg" alt="Experienced Teacher">
+      <h3>Experienced Teacher</h3>
+    </div>
+    <div class="feature-card">
+      <img src="library.jpg" alt="Rich Library">
+      <h3>Rich Library</h3>
+    </div>
+    <div class="feature-card">
+      <img src="classroomicon.jpg" alt="Smart Classroom">
+      <h3>Smart Classroom</h3>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!--Here is Gallary Section show photo-->
+<section class="gallery-section">
+  <h2 class="gallery-title">Image Gallery</h2>
+  <div class="gallery-title-line"></div>
+  <div class="gallery-container">
+    <div class="gallery-photo">
+      <img src="photo1.jpg" alt="Gallery Photo 1">
+    </div>
+    <div class="gallery-photo">
+      <img src="photo2.jpg" alt="Gallery Photo 2">
+    </div>
+    <div class="gallery-photo">
+      <img src="photo3.jpg" alt="Gallery Photo 3">
+    </div>
+    <div class="gallery-photo">
+      <img src="photo5.jpg" alt="Gallery Photo 4">
+    </div>
+    <div class="gallery-photo">
+      <img src="photo1.jpg" alt="Gallery Photo 1">
+    </div>
+    <div class="gallery-photo">
+      <img src="photo2.jpg" alt="Gallery Photo 2">
+    </div>
+    <div class="gallery-photo">
+      <img src="photo3.jpg" alt="Gallery Photo 3">
+    </div>
+    <div class="gallery-photo">
+      <img src="photo5.jpg" alt="Gallery Photo 4">
+    </div>
+    <div class="gallery-photo">
+      <img src="photo1.jpg" alt="Gallery Photo 1">
+    </div>
+    <div class="gallery-photo">
+      <img src="photo2.jpg" alt="Gallery Photo 2">
+    </div>
+    <div class="gallery-photo">
+      <img src="photo3.jpg" alt="Gallery Photo 3">
+    </div>
+    <div class="gallery-photo">
+      <img src="photo5.jpg" alt="Gallery Photo 4">
+    </div>
+    <!-- Add more photos as needed -->
+  </div>
+</section>
+
+
+
+
+<!--Here video Gallary section-->
+<section class="video-gallery-section">
+  <h2 class="video-gallery-title">Video & Vlogs Gallery</h2>
+  <div class="video-gallery-container">
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/eX2qFMC8cFo" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- Add more videos as needed -->
+  </div>
+</section>
+
+
+<!--Here SHow Online Class & Tutorial-->
+<section class="online-class-section">
+  <h2 class="gallery-title">🎓 অনলাইন ক্লাস ও টিউটোরিয়াল গ্যালারি</h2>
+
+<section class="video-gallery-section">
+  <div class="video-gallery-container">
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/eX2qFMC8cFo" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- Add more videos as needed -->
+  </div>
+</section>
+</section>
+
+
+<!--Here Show Address/Map-->
+<section class="map-section">
+  <h2 class="map-title">Our Location</h2>
+  <div class="map-wrapper">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.930935323239!2d90.419212!3d23.859597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7e6ddf3a2a9%3A0x2b4bb00d12345678!2sEden%20International%20School%20%26%20College!5e0!3m2!1sen!2sbd!4v1627630000000!5m2!1sen!2sbd"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div class="map-footer">
+      <a href="https://www.google.com/maps?ll=23.859597,90.419212&z=16&t=m&hl=en&gl=BD&mapclient=embed&q=Eden%20International%20School%20%26%20College"
+         target="_blank">View larger map</a>
+    </div>
+  </div>
+</section>
+
+
+ <section class="contact-section">
+  <h2 class="contact-heading">📞 যোগাযোগ করুন</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>🏫 আমাদের ঠিকানা</h3>
+      <p>এডেন ইন্টারন্যাশনাল স্কুল অ্যান্ড কলেজ</p>
+      <p>রোড নং ১০, খিলগাঁও, ঢাকা-১২১৯</p>
+      <p>📞 ফোন: ০১৭১২-৩৪৫৬৭৮</p>
+      <p>✉️ ইমেইল: eden.school@email.com</p>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="আপনার নাম" required>
+      <input type="email" placeholder="আপনার ইমেইল" required>
+      <textarea placeholder="আপনার বার্তা লিখুন..." required></textarea>
+      <button type="submit">পাঠান</button>
+    </form>
+  </div>
+</section>
+<script>
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+  e.preventDefault(); // ফর্ম সাবমিট রোধ
+  alert("✅ ধন্যবাদ! আপনার বার্তা পাঠানো হয়েছে।");
+  this.reset(); // ফর্ম রিসেট করুন
+});
+</script>
+
+   <h2>Our School Anthem</h2>
+    <audio controls>
+    <source src="National_Anthem.ogg" type="audio/mpeg">
+    আপনার ব্রাউজার অডিও প্লে করতে সমর্থ নয়।
+  </audio>
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- বাম পাশে: লোগো ও যোগাযোগ -->
+    <div class="footer-left">
+      <img src="eden.jpg" alt="School Logo" class="footer-logo">
+      <p><i class="fas fa-map-marker-alt"></i> Khilgaon, Dhaka-1000</p>
+      <p><i class="fas fa-phone-alt"></i> 01711273586</p>
+      <p><i class="fas fa-envelope"></i> eisc@gmail.com</p>
+    </div>
+
+    <!-- ডান পাশে: গুরুত্বপূর্ণ লিংক -->
+    <div class="footer-right">
+      <h3>গুরুত্বপূর্ণ লিংক</h3>
+      <ul>
+        <li><a href="#">প্রাথমিক শিক্ষা অধিদপ্তর</a></li>
+        <li><a href="#">জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (এনসিটিবি)</a></li>
+        <li><a href="#">শিক্ষা মন্ত্রণালয়</a></li>
+        <li><a href="#">প্রাথমিক ও গণশিক্ষা মন্ত্রণালয়</a></li>
+        <li><a href="#">মুক্তপাঠ</a></li>
+        <li><a href="#">Education Board</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- নিচের অংশ -->
+  <div class="footer-bottom">
+  <div class="footer-left">
+    <p>Copyright © 2025 <strong>EISC</strong>. All Rights Reserved</p>
+  </div>
+  <div class="footer-right">
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Sitemap</a>
+  </div>
+</div>
+</footer>
+
+
+
+</body>
+</html>

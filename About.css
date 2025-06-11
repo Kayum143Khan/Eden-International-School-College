@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: #002244;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Top Bar with Slogan Combined */
+.top-bar {
+   background: linear-gradient(#005ce6, #005ce6);
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+}
+.top-bar .slogan {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* Address */
+.Address {
+  background-color: #005ce6;
+  color: #ffffff;
+  text-align: center;
+  padding: 6px 12px;
+  font-size: 40px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #005ce6;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #0040ff;
+}
+
+/* Toggle Button for small screens */
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #004080;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #nav-menu.show {
+    display: flex;
+  }
+
+  #nav-menu li {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+/*English Advice speech */
+.center-text {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+
+/*principle Advice */
+.center {
+  text-align: center;
+  margin: 20px 0;
+}
+footer {
+  background-color: #003366; /* ইচ্ছামতো ব্যাকগ্রাউন্ড রঙ */
+  color: white;
+  text-align: center; /* লেখাকে মাঝখানে আনা */
+  padding: 15px 10px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+}

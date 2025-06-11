@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Eden International School & College</title>
+  <link rel="stylesheet" href="Contacts.css">
+  
+</head>
+<body>
+<header> 
+    <div class="top-bar">
+      <div class="contact-info">
+        <span>📞 017xxxxxxxx</span>
+        <span>✉️ eden@gmail.com</span>
+      </div>
+      <div class="slogan">“শিক্ষা নিয়ে গড়ব দেশ লাল সবুজের বাংলাদেশ”</div>
+    </div>
+    <div class="Address">Eden International School & College, Meradia Khilgaon</div>
+  </header>
+
+  <nav>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <ul id="nav-menu">
+      <li><a href="Eden International School & College.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Faculty.html">Faculty</a></li>
+      <li><a href="Admission.html">Admission</a></li>
+      <li><a href="Academics.html">Academics</a></li>
+      <li><a href="Result.html">Result</a></li>
+      <li><a href="Gallery.html">Gallary</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById("nav-menu");
+      navMenu.classList.toggle("show");
+    }
+  </script>
+
+  <div class="container">
+    <div class="contact-info">
+      <h2>School Contact Information</h2>
+      <p><strong>Email:</strong> info@eden.edu.bd</p>
+      <p><strong>Phone:</strong> +8801XXXXXXXXX</p>
+      <p><strong>Address:</strong> Eden Road, Dhaka, Bangladesh</p>
+    </div>
+
+    <form action="#" method="post">
+      <h2>Send Us a Message</h2>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="teachers">
+      <h2>Meet Our Teachers</h2>
+      <div class="teacher-grid">
+        <div class="teacher-card">
+          <img src="Principle.jpg" alt="Teacher 1">
+          <h4>Md. Jamal Mallik</h4>
+          <p>Head of the Institue<br>15+ Years Experience</p>
+        </div>
+        <div class="teacher-card">
+          <img src="photo1.jpg" alt="Teacher 2">
+          <h4>Md. Kayum Khan</h4>
+          <p>English Language Specialist<br>B Sc. in CSE</p>
+        </div>
+        <div class="teacher-card">
+          <img src="photo2.jpg" alt="Teacher 3">
+          <h4>Mr. Alamgir Hossain</h4>
+          <p>Math Teacher<br>Expert in SSC & HSC Math</p>
+        </div>
+        <div class="teacher-card">
+          <img src="teacher4.jpg" alt="Teacher 4">
+          <h4>Mrs. Shirin Akhter</h4>
+          <p>Bangla Teacher<br>National Curriculum Expert</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Eden International School & College. All rights reserved.</p>
+  </footer>
+</body>
+</html>

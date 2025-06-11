@@ -1,0 +1,178 @@
+
+
+/* employ page headline show css code*/
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: #002244;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Top Bar with Slogan Combined */
+
+
+
+.top-bar {
+   background: linear-gradient(#005ce6, #005ce6);
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+}
+
+
+.top-bar .slogan {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* Address */
+.Address {
+  background-color: #005ce6;
+  color: #ffffff;
+  text-align: center;
+  padding: 6px 12px;
+  font-size: 40px;
+}
+
+
+
+/* Navigation Bar */
+nav {
+  background-color: #005ce6;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+
+
+
+nav ul li a:hover {
+  background-color: #0040ff;
+}
+
+
+/* Flowing Line */
+.flowing-line {
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #003366;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.section-heading {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #f9f9f9, #e6f7ff);
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.section-heading span {
+  font-weight: 700;
+  font-size: 28px;
+  color: #007bff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*show employ name,email design */
+    .employee-section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .employee-heading,
+    .employee-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .employee-heading {
+      font-weight: bold;
+      background-color: #f0f0f0;
+      border-top: 2px solid #0055a5;
+      border-bottom: 2px solid #0055a5;
+    }
+
+    .employee-row img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .employee-heading,
+      .employee-row {
+        grid-template-columns: 1fr;
+      }
+
+      .employee-heading div,
+      .employee-row div {
+        padding: 5px 0;
+      }
+    }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results - Eden International School & College</title>
+  <link rel="stylesheet" href="Result.css">
+</head>
+<body>
+ 
+
+
+  <!--show just head written all-->
+
+<header> 
+    <div class="top-bar">
+      <div class="contact-info">
+        <span>📞 017xxxxxxxx</span>
+        <span>✉️ eden@gmail.com</span>
+      </div>
+      <div class="slogan">“শিক্ষা নিয়ে গড়ব দেশ লাল সবুজের বাংলাদেশ”</div>
+    </div>
+
+    <div class="Address">Eden International School & College, Meradia Khilgaon</div>
+  </header>
+
+  <nav>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <ul id="nav-menu">
+      <li><a href="Eden International School & College.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Faculty.html">Faculty</a></li>
+      <li><a href="Admission.html">Admission</a></li>
+      <li><a href="Academics.html">Academics</a></li>
+      <li><a href="Result.html">Result</a></li>
+      <li><a href="Gallery.html">Gallary</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById("nav-menu");
+      navMenu.classList.toggle("show");
+    }
+  </script>
+
+
+
+
+
+
+
+  <div class="container">
+    <input type="text" id="searchBox" placeholder="Search by Roll, Name or GPA..." onkeyup="searchResults()">
+
+    <h2>PSC Results</h2>
+    <table>
+      <tr><th>Roll</th><th>Name</th><th>GPA</th><th>Status</th></tr>
+      <tr><td>501</td><td>Rina Akter</td><td>5.00</td><td>Passed</td></tr>
+      <tr><td>502</td><td>Shahinur Rahman</td><td>4.75</td><td>Passed</td></tr>
+    </table>
+
+    <h2>JSC Results</h2>
+    <table>
+      <tr><th>Roll</th><th>Name</th><th>GPA</th><th>Status</th></tr>
+      <tr><td>601</td><td>Jony Miah</td><td>5.00</td><td>Passed</td></tr>
+      <tr><td>602</td><td>Maruf Hasan</td><td>4.90</td><td>Passed</td></tr>
+    </table>
+
+    <h2>SSC Results</h2>
+    <table>
+      <tr><th>Roll</th><th>Name</th><th>GPA</th><th>Status</th></tr>
+      <tr><td>701</td><td>Ayesha Akter</td><td>5.00</td><td>Passed</td></tr>
+      <tr><td>702</td><td>Rahim Uddin</td><td>4.80</td><td>Passed</td></tr>
+    </table>
+
+    <h2>Class 6 Final Exam</h2>
+    <table>
+      <tr><th>Roll</th><th>Name</th><th>GPA</th><th>Status</th></tr>
+      <tr><td>801</td><td>Tanisha Karim</td><td>4.90</td><td>Promoted</td></tr>
+    </table>
+
+    <h2>Class 7 Final Exam</h2>
+    <table>
+      <tr><th>Roll</th><th>Name</th><th>GPA</th><th>Status</th></tr>
+      <tr><td>901</td><td>Faisal Hossain</td><td>4.75</td><td>Promoted</td></tr>
+    </table>
+
+    <h2>Class 8 Final Exam</h2>
+    <table>
+      <tr><th>Roll</th><th>Name</th><th>GPA</th><th>Status</th></tr>
+      <tr><td>1001</td><td>Mahinur Jahan</td><td>4.85</td><td>Promoted</td></tr>
+    </table>
+
+    <h2>Class 9 Final Exam</h2>
+    <table>
+      <tr><th>Roll</th><th>Name</th><th>GPA</th><th>Status</th></tr>
+      <tr><td>1101</td><td>Shanto Rahman</td><td>4.70</td><td>Promoted</td></tr>
+    </table>
+
+    <h2>Class 10 Final Exam</h2>
+    <table>
+      <tr><th>Roll</th><th>Name</th><th>GPA</th><th>Status</th></tr>
+      <tr><td>1201</td><td>Kamrul Hasan</td><td>4.90</td><td>Promoted</td></tr>
+    </table>
+  </div>
+<script>
+    function searchResults() {
+      const input = document.getElementById('searchBox').value.toLowerCase();
+      const tables = document.querySelectorAll('table');
+      tables.forEach(table => {
+        const rows = table.getElementsByTagName('tr');
+        for (let i = 1; i < rows.length; i++) {
+          let row = rows[i];
+          const cells = row.getElementsByTagName('td');
+          let match = false;
+          for (let j = 0; j < cells.length; j++) {
+            if (cells[j].innerText.toLowerCase().includes(input)) {
+              match = true;
+              break;
+            }
+          }
+          row.style.display = match ? '' : 'none';
+        }
+      });
+    }
+  </script>
+  <footer>
+    <p>&copy; 2025 Eden International School & College. All rights reserved.</p>
+  </footer>
+</body>
+</html>
