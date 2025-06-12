@@ -691,12 +691,17 @@ img {
   object-fit: contain; /* ছবির প্রোপারশন ঠিক রাখতে */
 }
 
+/* 📱 Mobile layout fix: stack calendar and hotline vertically on small screens */
+@media (max-width: 768px) {
+  .wide-container {
+    flex-direction: column;
+  }
 
-
-
-
-
-
+  .calendar-section,
+  .hotline-section {
+    margin-bottom: 20px;
+  }
+}
 
 
 
